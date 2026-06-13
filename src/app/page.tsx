@@ -1,12 +1,5 @@
-"use client";
+import { TaskCreatePage } from "./components/TaskCreatePage";
 
-import { toast } from "sonner";
-import { TaskForm } from "./components/TaskForm";
-
-export default function Home() {
-  return (
-    <div>
-      <TaskForm onSuccess={() => toast.success("Task created!")} />
-    </div>
-  );
+export default function TestPage() {
+  return <TaskCreatePage />;
 }
